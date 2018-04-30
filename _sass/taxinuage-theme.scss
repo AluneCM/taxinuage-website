@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Fabrik-Regular';
+  src: url('fonts/Fabrik-Regular.eot');
+  src: url('fonts/Fabrik-Regular.woff2') format('woff2'),
+       url('fonts/Fabrik-Regular.woff') format('woff'),
+       url('fonts/Fabrik-Regular.ttf') format('truetype'),
+       url('fonts/Fabrik-Regular.svg#Fabrik-Regular') format('svg'),
+       url('fonts/Fabrik-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@charset "utf-8";
+
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+// Import partials.
+@import
+  "tn-theme/base",
+  // "tn-theme/layout",
+  "tn-theme/syntax-highlighting"
+;
